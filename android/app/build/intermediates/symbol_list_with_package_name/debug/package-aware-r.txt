@@ -395,6 +395,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color catalyst_logbox_background
@@ -423,6 +427,7 @@ color material_grey_850
 color material_grey_900
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -527,6 +532,8 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen autofill_inline_suggestion_icon_size
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -558,6 +565,10 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen subtitle_corner_radius
+dimen subtitle_outline_width
+dimen subtitle_shadow_offset
+dimen subtitle_shadow_radius
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -654,6 +665,8 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable forward
+drawable next
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -666,8 +679,13 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pause
+drawable play
+drawable previous
 drawable redbox_top_border_background
+drawable rewind
 drawable rn_edit_text_material
+drawable stop
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 id ALT
@@ -715,6 +733,7 @@ id accessibility_label
 id accessibility_role
 id accessibility_state
 id accessibility_value
+id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -745,7 +764,13 @@ id autofill_inline_suggestion_title
 id beginning
 id blocking
 id bottom
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id buttonPanel
+id cancel_action
 id catalyst_redbox_title
 id center
 id centerCrop
@@ -765,6 +790,7 @@ id dialog_button
 id disableHome
 id edit_query
 id end
+id end_padder
 id expand_activities_button
 id expanded_menu
 id fitBottomStart
@@ -791,6 +817,7 @@ id line1
 id line3
 id listMode
 id list_item
+id media_actions
 id message
 id middle
 id multiply
@@ -843,6 +870,7 @@ id split_action_bar
 id src_atop
 id src_in
 id src_over
+id status_bar_latest_event_content
 id submenuarrow
 id submit_area
 id tabMode
@@ -924,13 +952,24 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout autofill_inline_suggestion
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout custom_dialog
 layout dev_loading_view
 layout fps_view
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout redbox_item_frame
@@ -1002,6 +1041,10 @@ string catalyst_sample_profiler_enable
 string catalyst_settings
 string catalyst_settings_title
 string combobox_description
+string copy_toast_msg
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
 string header_description
 string image_description
 string imagebutton_description
@@ -1193,6 +1236,8 @@ style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
 style CalendarDatePickerDialog
 style CalendarDatePickerStyle
+style ClockTimePickerDialog
+style ClockTimePickerStyle
 style DialogAnimationFade
 style DialogAnimationSlide
 style Platform_AppCompat
@@ -1224,6 +1269,8 @@ style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
 style SpinnerDatePickerDialog
 style SpinnerDatePickerStyle
+style SpinnerTimePickerDialog
+style SpinnerTimePickerStyle
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2
@@ -1274,9 +1321,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
@@ -1450,4 +1502,6 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml image_share_filepaths
+xml provider_paths
 xml rn_dev_preferences

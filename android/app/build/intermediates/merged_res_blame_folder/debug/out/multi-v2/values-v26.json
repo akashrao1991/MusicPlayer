@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/akash/custom/MusicPlayer/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
+            "outputFile": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/home/akash/.gradle/caches/transforms-3/d7f19fb48ed68be2921ae87dc8e58f8e/transformed/appcompat-1.3.0/res/values-v26/values-v26.xml",
+                    "source": "/home/akash/.gradle/caches/transforms-3/df021a17cba96a1b6826015517ca2fdd/transformed/appcompat-1.3.0/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

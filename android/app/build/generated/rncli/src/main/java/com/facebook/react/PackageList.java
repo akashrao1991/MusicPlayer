@@ -11,7 +11,20 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-
+// @react-native-community/datetimepicker
+import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
+// react-native-audio-recorder-player
+import com.dooboolab.audiorecorderplayer.RNAudioRecorderPlayerPackage;
+// react-native-background-timer
+import com.ocetnik.timer.BackgroundTimerPackage;
+// react-native-fs
+import com.rnfs.RNFSPackage;
+// react-native-track-player
+import com.guichaguri.trackplayer.TrackPlayer;
+// react-native-vector-icons
+import com.oblador.vectoricons.VectorIconsPackage;
+// rn-fetch-blob
+import com.RNFetchBlob.RNFetchBlobPackage;
 
 public class PackageList {
   private Application application;
@@ -56,7 +69,14 @@ public class PackageList {
 
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
-      new MainReactPackage(mConfig)
+      new MainReactPackage(mConfig),
+      new RNDateTimePickerPackage(),
+      new RNAudioRecorderPlayerPackage(),
+      new BackgroundTimerPackage(),
+      new RNFSPackage(),
+      new TrackPlayer(),
+      new VectorIconsPackage(),
+      new RNFetchBlobPackage()
     ));
   }
 }
