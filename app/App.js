@@ -1,7 +1,6 @@
 import React from 'react';
 import { SafeAreaView, StatusBar, Text, View } from 'react-native';
 import styles from './common/styles';
-// import styles from './new-app/styles';
 import {TracksList} from './components/tracksList/TracksList';
 
 const App = () => {
