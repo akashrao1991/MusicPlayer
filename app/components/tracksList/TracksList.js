@@ -9,11 +9,11 @@ import {
     View,
 } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
-import { AppPlayer } from '../components/appPlayer/AppPlayer';
-import AudioPlayer from './AudioPlayer';
-import { SongItem } from '../components/songItem/SongItem';
-import styles from './styles';
-import { tracks } from './tracks';
+import { AppPlayer } from '../appPlayer/AppPlayer';
+import AudioPlayer from '../../new-app/AudioPlayer';
+import { SongItem } from '../songItem/SongItem';
+import styles from '../../new-app/styles';
+import { tracks } from '../../new-app/tracks';
 
 export function TracksList(props) {
     const {
