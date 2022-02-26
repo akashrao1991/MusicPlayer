@@ -7,6 +7,7 @@ import {hasValue} from '../../common/functions'
 import { AppPlayer } from '../../player/AppPlayer';
 import { styles } from './styles';
 import { colors } from '../../common/colors';
+import { TrackArt } from './TrackArt';
 
 const AudioPlayer = ({ track, onNextPrevPress }) => {
     const {
@@ -65,9 +66,7 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
     return (
         <View style={playerMaxView}>
             <View style={topSection}>
-                <View style={trackArtBox}>
-                    <Image style={trackArt} source={{ uri: artImg }} />
-                </View>
+                <TrackArt artImage={artImg} />
                 <View style={trackDesc}>
                     <View>
                         <Text style={trackTitle}>{track.title}</Text>
