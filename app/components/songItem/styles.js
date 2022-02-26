@@ -1,21 +1,40 @@
 import { StyleSheet } from "react-native";
+import { scale, verticalScale } from "../../common/scaling";
 import { circleStyle } from "../../common/styles";
 
 export const styles = StyleSheet.create({
     itemStyle: {
-        marginTop: 10,
-        marginHorizontal: 8,
-        paddingHorizontal: 8,
+        marginTop: verticalScale(10),
+        // marginHorizontal: scale(8),
+        paddingHorizontal: scale(8),
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-around',
         alignItems: 'stretch',
-        height: 80,
+        height: verticalScale(80),
         borderBottomColor: '#333',
         borderWidth: 0,
     },
-    listBox: {
-        height: '100%',
+    trackImgBox: {
+        flex: 1,
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    },
+    trackDescBox: {
+        flex: 5,
+        paddingLeft: scale(10),
+        marginLeft: scale(5),
+        borderRadius: 5,
+        display: 'flex',
+    },
+    trackImg: {
+        ...circleStyle(50),
+    },
+    titleBox: {
+        flex: 2,
+        justifyContent: 'flex-end',
+        alignItems: 'flex-start',
+        marginTop: verticalScale(2),
     },
     subTitleBox: {
         flex: 2,
@@ -23,30 +42,21 @@ export const styles = StyleSheet.create({
         alignItems: 'flex-start',
     },
     title: {
-        fontSize: 18,
+        fontSize: scale(18),
         fontWeight: 'bold',
     },
-    titleBox: {
-        flex: 2,
-        justifyContent: 'flex-end',
-        alignItems: 'flex-start',
-        marginTop: 2,
+    subTitle: {
+        fontSize: scale(15),
     },
-    trackImg: {
-        ...circleStyle(50),
+    listBox: {
+        height: '100%',
     },
-    trackImgBox: {
-        flex: 1,
-        justifyContent: 'space-around',
-        alignItems: 'center',
-    },   
-    trackDescBox: {
-        flex: 5,
-        paddingLeft: 10,
-        marginLeft: 5,
-        borderRadius: 5,
-        display: 'flex',
+    playerBox: {
+        position: 'absolute',
+        zIndex: 10,
+        height: '50%',
+        width: '100%',
+        bottom: 0,
     },
-
 
 });

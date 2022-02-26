@@ -14,6 +14,7 @@ import AudioPlayer from '../audioPlayer/AudioPlayer';
 import { SongItem } from '../songItem/SongItem';
 import styles from '../../new-app/styles';
 import { tracks } from './tracks';
+import { verticalScale } from '../../common/scaling';
 
 export function TracksList(props) {
     const {
@@ -32,7 +33,7 @@ export function TracksList(props) {
 
     let listBoxStyle = {};
     if (selectedTrack)
-        listBoxStyle = { paddingBottom: 280 }
+        listBoxStyle = { paddingBottom: verticalScale(280) }
 
     const playNextPrev = async (prevOrNext) => {
         const currentTrackId = await TrackPlayer.getCurrentTrack();
