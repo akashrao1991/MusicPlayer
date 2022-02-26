@@ -13,9 +13,7 @@ const App = () => {
             <View style={header}>
                 <Text style={headerTitle}>Audio Player</Text>
             </View>
-            <View style={content}>
-                <TracksList />
-            </View>
+            <TracksList />
         </SafeAreaView>
     );
 };

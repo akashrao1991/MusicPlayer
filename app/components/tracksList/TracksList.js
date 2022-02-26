@@ -23,6 +23,7 @@ export function TracksList(props) {
         container,
         listBox,
         playerBox,
+        content,
     } = styles;
 
     // state vars
@@ -52,6 +53,8 @@ export function TracksList(props) {
 
 
     return (
+        <View style={content}>
+
         <SafeAreaView style={container}>
             <View style={[listBox, listBoxStyle]}>
                 <FlatList data={tracks} renderItem={SongItem({ selectedTrack, setSelectedTrack })} keyExtractor={item => item.id} />
@@ -60,6 +63,8 @@ export function TracksList(props) {
                 <AudioPlayer track={selectedTrack} onNextPrevPress={playNextPrev} />
             </View>
         </SafeAreaView>
+        </View>
+
     )
 
 }
