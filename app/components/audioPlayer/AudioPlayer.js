@@ -8,6 +8,7 @@ import { AppPlayer } from '../../player/AppPlayer';
 import { styles } from './styles';
 import { colors } from '../../common/colors';
 import { TrackArt } from './TrackArt';
+import { TrackDescription } from './TrackDescription';
 
 const AudioPlayer = ({ track, onNextPrevPress }) => {
     const {
@@ -67,16 +68,7 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
         <View style={playerMaxView}>
             <View style={topSection}>
                 <TrackArt artImage={artImg} />
-                <View style={trackDesc}>
-                    <View>
-                        <Text style={trackTitle}>{track.title}</Text>
-                    </View>
-                    <View>
-                        <Text style={trackSubtitle}>
-                            {track.artist || track.album || 'unknown'}
-                        </Text>
-                    </View>
-                </View>
+                <TrackDescription track={track} />
             </View>
             <View style={progrsBarSection}>
                 <Text>{AppPlayer.secondsToHHMMSS(Math.floor(progress.position || 0))}</Text>
