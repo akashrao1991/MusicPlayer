@@ -3,9 +3,9 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer, { useProgress, useTrackPlayerProgress } from 'react-native-track-player';
 import Slider from '@react-native-community/slider';
 import Icon from 'react-native-vector-icons/Fontisto';
-import styles from './styles';
-import {hasValue} from '../common/functions'
-import { AppPlayer } from '../components/appPlayer/AppPlayer';
+import styles from '../../new-app/styles';
+import {hasValue} from '../../common/functions'
+import { AppPlayer } from '../appPlayer/AppPlayer';
 // type compProps = {
 //     track: TrackPlayer.Track;
 //     onNextPrevPress: (p: 'prev' | 'next') => void;
