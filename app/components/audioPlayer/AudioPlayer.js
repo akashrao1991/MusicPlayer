@@ -5,7 +5,7 @@ import Slider from '@react-native-community/slider';
 import Icon from 'react-native-vector-icons/Fontisto';
 import styles from '../../new-app/styles';
 import {hasValue} from '../../common/functions'
-import { AppPlayer } from '../appPlayer/AppPlayer';
+import { AppPlayer } from '../../player/AppPlayer';
 // type compProps = {
 //     track: TrackPlayer.Track;
 //     onNextPrevPress: (p: 'prev' | 'next') => void;
