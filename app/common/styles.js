@@ -19,13 +19,6 @@ export const circleStyle= (heightWidth) => ({
 
 export const styles = StyleSheet.create({
 
-    content: {
-        flex: 8,
-        justifyContent: 'space-around',
-        alignItems: 'stretch',
-        backgroundColor: colors.APP_LIGHT_BACKGROUND,
-    },
-
     appContainer: {
         flex: 1,
         justifyContent: 'space-around',

@@ -5,7 +5,7 @@ import {styles} from './common/styles';
 import {TracksList} from './components/tracksList/TracksList';
 
 const App = () => {
-    const { appContainer, content, header, headerTitle } = styles;
+    const { appContainer,  header, headerTitle } = styles;
 
     return (
         <SafeAreaView style={appContainer}>
