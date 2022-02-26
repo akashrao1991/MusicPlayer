@@ -130,6 +130,10 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
+    lintOptions {
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "com.musicplayer"
         minSdkVersion rootProject.ext.minSdkVersion
