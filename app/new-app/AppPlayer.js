@@ -1,35 +1,37 @@
-import TrackPlayer from 'react-native-track-player';
+import TrackPlayer,{Capability} from 'react-native-track-player';
 
-class AppPlayer {
+export class AppPlayer {
 
     static selectedTrack
 
     static initializePlayer = async () => {
         try {
+
             TrackPlayer.updateOptions({
-                stopWithApp: false, // false=> music continues in background even when app is closed
-                // Media controls capabilities
+                stopWithApp: false,
+                // Media controls capabilities                
                 capabilities: [
-                    TrackPlayer.CAPABILITY_PLAY,
-                    TrackPlayer.CAPABILITY_PAUSE,
-                    TrackPlayer.CAPABILITY_STOP,
-                    TrackPlayer.CAPABILITY_SEEK_TO,
+                    Capability.Play,
+                    Capability.Pause,
+                    Capability.SkipToNext,
+                    Capability.SkipToPrevious,
+                    Capability.Stop,
                 ],
+            
                 // Capabilities that will show up when the notification is in the compact form on Android
                 compactCapabilities: [
-                    TrackPlayer.CAPABILITY_PLAY,
-                    TrackPlayer.CAPABILITY_PAUSE,
-                    TrackPlayer.CAPABILITY_STOP,
-                    TrackPlayer.CAPABILITY_SEEK_TO,
-                ],
-            });
+                    Capability.Play, 
+                    Capability.Pause
+                ],            
+            })
 
-            await TrackPlayer.setupPlayer();
+            await TrackPlayer.setupPlayer()
+
         } catch (e) {
-            console.log(e);
+            console.log(e)
             // to-do handle error
         }
-    };
+    }
 
     static secondsToHHMMSS = (seconds) => {
         // credits - https://stackoverflow.com/a/37096512
@@ -45,4 +47,3 @@ class AppPlayer {
     };
 }
 
-export default AppPlayer;
