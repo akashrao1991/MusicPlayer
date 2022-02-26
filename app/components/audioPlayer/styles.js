@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
     },
 
-    progrsBarSection: {
+    progressBarSection: {
         ...flexStyles,
         alignItems: 'center',
         justifyContent: 'center',

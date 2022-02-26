@@ -9,13 +9,14 @@ import { styles } from './styles';
 import { colors } from '../../common/colors';
 import { TrackArt } from './TrackArt';
 import { TrackDescription } from './TrackDescription';
+import { TrackSlider } from './TrackSlider';
 
 const AudioPlayer = ({ track, onNextPrevPress }) => {
     const {
         playerMaxView,
         topSection,
         buttonsSection,
-        progrsBarSection,
+        progressBarSection: progrsBarSection,
         buttonsCol,
         playPauseButton,
         playPauseIcon,
@@ -26,7 +27,6 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
         trackSubtitle,
     } = styles;
 
-    const progress = useProgress()
     const [isPlaying, setPlaying] = useState(true);
 
     useEffect(() => {
@@ -66,23 +66,17 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
     const playOrPauseIcon = isPlaying ? 'pause' : 'play';
     return (
         <View style={playerMaxView}>
+
             <View style={topSection}>
+
                 <TrackArt artImage={artImg} />
+
                 <TrackDescription track={track} />
+                
             </View>
-            <View style={progrsBarSection}>
-                <Text>{AppPlayer.secondsToHHMMSS(Math.floor(progress.position || 0))}</Text>
-                <Slider
-                    style={{ width: '70%', height: 40 }}
-                    minimumValue={0}
-                    maximumValue={track.duration}
-                    minimumTrackTintColor={colors.TINT}
-                    maximumTrackTintColor={colors.TINT}
-                    thumbTintColor={colors.TINT}
-                    value={progress.position}
-                />
-                <Text>{AppPlayer.secondsToHHMMSS(track.duration || 0)}</Text>
-            </View>
+
+            <TrackSlider track={track} />
+
             <View style={buttonsSection}>
                 <View style={[buttonsCol, { alignItems: 'flex-end' }]}>
                     <TouchableOpacity onPress={() => onNextPrevPress('prev')}>
