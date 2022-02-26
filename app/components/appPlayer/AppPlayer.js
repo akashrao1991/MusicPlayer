@@ -2,7 +2,7 @@ import TrackPlayer,{Capability} from 'react-native-track-player';
 
 export class AppPlayer {
 
-    static selectedTrack
+    static selectedTraccdk
 
     static initializePlayer = async () => {
         try {

@@ -11,7 +11,7 @@ import {
 import TrackPlayer from 'react-native-track-player';
 import { AppPlayer } from '../components/appPlayer/AppPlayer';
 import AudioPlayer from './AudioPlayer';
-import { SongItem } from './SongItem';
+import { SongItem } from '../components/songItem/SongItem';
 import styles from './styles';
 import { tracks } from './tracks';
 

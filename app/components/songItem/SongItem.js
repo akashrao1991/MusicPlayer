@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
-import styles from './styles';
+import styles from '../../new-app/styles';
 
 export const SongItem = (props) => ({item}) => {
 
