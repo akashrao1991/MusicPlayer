@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../common/colors";
 import { scale, verticalScale } from "../../common/scaling";
 import { circleStyle } from "../../common/styles";
 
@@ -12,7 +13,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'stretch',
         height: verticalScale(80),
-        borderBottomColor: '#333',
+        borderBottomColor: colors.BORDER,
         borderWidth: 0,
     },
     trackImgBox: {

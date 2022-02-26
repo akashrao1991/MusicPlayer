@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../common/colors";
 import { circleStyle, flexStyles } from "../../common/styles";
 
 
@@ -6,10 +7,10 @@ export const styles = StyleSheet.create({
 
     playerMaxView: {
         ...flexStyles,
-        backgroundColor: '#a3a3c2',
+        backgroundColor: colors.POPUP_PLAYER_BACKGROUND,
         paddingHorizontal: 5,
         height: 300,
-        shadowColor: '#000',
+        shadowColor: colors.BLACK,
         shadowOffset: {
             width: 0,
             height: 2,
@@ -53,11 +54,11 @@ export const styles = StyleSheet.create({
 
     playPauseButton: {
         ...circleStyle(60),
-        backgroundColor: '#52527a',
+        backgroundColor: colors.TINT,
     },
 
     playPauseIcon: {
-        color: '#fff',
+        color: colors.WHITE,
     },
 
     trackArtBox: {
@@ -80,13 +81,13 @@ export const styles = StyleSheet.create({
     trackTitle: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#3d3d5c',
+        color: colors.TEXT_DARK,
     },
 
     trackSubtitle: {
         fontSize: 16,
         fontWeight: 'bold',
-        color: '#3d3d5c',
+        color: colors.TEXT_DARK,
     },
 
 })

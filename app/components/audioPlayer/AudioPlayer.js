@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/Fontisto';
 import {hasValue} from '../../common/functions'
 import { AppPlayer } from '../../player/AppPlayer';
 import { styles } from './styles';
+import { colors } from '../../common/colors';
 
 const AudioPlayer = ({ track, onNextPrevPress }) => {
     const {
@@ -84,9 +85,9 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
                     style={{ width: '70%', height: 40 }}
                     minimumValue={0}
                     maximumValue={track.duration}
-                    minimumTrackTintColor="#52527a"
-                    maximumTrackTintColor="#52527a"
-                    thumbTintColor="#52527a"
+                    minimumTrackTintColor={colors.TINT}
+                    maximumTrackTintColor={colors.TINT}
+                    thumbTintColor={colors.TINT}
                     value={progress.position}
                 />
                 <Text>{AppPlayer.secondsToHHMMSS(track.duration || 0)}</Text>
@@ -94,17 +95,17 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
             <View style={buttonsSection}>
                 <View style={[buttonsCol, { alignItems: 'flex-end' }]}>
                     <TouchableOpacity onPress={() => onNextPrevPress('prev')}>
-                        <Icon name="step-backwrad" size={18} color="#52527a" />
+                        <Icon name="step-backwrad" size={18} color={colors.TINT} />
                     </TouchableOpacity>
                 </View>
                 <View style={buttonsCol}>
                     <TouchableOpacity onPress={onPlayPausePress} style={playPauseButton}>
-                        <Icon name={playOrPauseIcon} size={14} color="#000" style={playPauseIcon} />
+                        <Icon name={playOrPauseIcon} size={14} color={colors.BLACK} style={playPauseIcon} />
                     </TouchableOpacity>
                 </View>
                 <View style={[buttonsCol, { alignItems: 'flex-start' }]}>
                     <TouchableOpacity onPress={() => onNextPrevPress('next')}>
-                        <Icon name="step-forward" size={18} color="#52527a" />
+                        <Icon name="step-forward" size={18} color={colors.BUTTON} />
                     </TouchableOpacity>
                 </View>
             </View>
