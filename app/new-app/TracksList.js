@@ -9,7 +9,7 @@ import {
     View,
 } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
-import { AppPlayer } from './AppPlayer';
+import { AppPlayer } from '../components/appPlayer/AppPlayer';
 import AudioPlayer from './AudioPlayer';
 import { SongItem } from './SongItem';
 import styles from './styles';
