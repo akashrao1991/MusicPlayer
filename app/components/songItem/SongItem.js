@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
+import { colors } from '../../common/colors';
+import { hasValue } from '../../common/functions';
 import {styles} from './styles';
 
 export const SongItem = (props) => ({item}) => {
@@ -21,8 +23,8 @@ export const SongItem = (props) => ({item}) => {
     const artImg = item.artwork || `https://picsum.photos/150/200/?random=${Math.random()}`;
 
     let highlightStyle = {};
-    if (selectedTrack && selectedTrack.id === item.id)
-        highlightStyle = { backgroundColor: '#d1d1e0' }
+    if (hasValue(selectedTrack) && selectedTrack.id === item.id)
+        highlightStyle = { backgroundColor: colors.HIGHLIGHT_BACKGROUND }
     
     const onTrackItemPress = async (track) => {
         await TrackPlayer.stop();
