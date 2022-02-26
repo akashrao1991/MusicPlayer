@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
-import styles from '../../new-app/styles';
+import {styles} from './styles';
 
 export const SongItem = (props) => ({item}) => {
 
     const {
-        container,
         itemStyle,
-        listBox,
-        playerBox,
         subTitle,
         subTitleBox,
         title,
