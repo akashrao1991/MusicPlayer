@@ -9,6 +9,7 @@ MERGED from [com.facebook.flipper:flipper:0.99.0] /home/akash/.gradle/caches/tra
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.99.0] /home/akash/.gradle/caches/transforms-3/277470b77ca53d17d19894a35bdaf82a/transformed/jetified-flipper-network-plugin-0.99.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.99.0] /home/akash/.gradle/caches/transforms-3/9741841528dc1e9a470adde98bcabbad/transformed/jetified-flipper-fresco-plugin-0.99.0/AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-community_slider] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/slider/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-12:12
 MERGED from [:react-native-background-timer] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-background-timer/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-fs] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-fs/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-11:12
@@ -178,6 +179,8 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.99.0] /home/akash/.gra
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.99.0] /home/akash/.gradle/caches/transforms-3/9741841528dc1e9a470adde98bcabbad/transformed/jetified-flipper-fresco-plugin-0.99.0/AndroidManifest.xml:11:5-13:41
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_slider] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/slider/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_slider] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/slider/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-background-timer] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-background-timer/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41

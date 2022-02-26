@@ -13,6 +13,8 @@ import java.util.ArrayList;
 
 // @react-native-community/datetimepicker
 import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
+// @react-native-community/slider
+import com.reactnativecommunity.slider.ReactSliderPackage;
 // react-native-audio-recorder-player
 import com.dooboolab.audiorecorderplayer.RNAudioRecorderPlayerPackage;
 // react-native-background-timer
@@ -71,6 +73,7 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new RNDateTimePickerPackage(),
+      new ReactSliderPackage(),
       new RNAudioRecorderPlayerPackage(),
       new BackgroundTimerPackage(),
       new RNFSPackage(),
