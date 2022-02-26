@@ -13,7 +13,7 @@ import { AppPlayer } from '../appPlayer/AppPlayer';
 import AudioPlayer from '../audioPlayer/AudioPlayer';
 import { SongItem } from '../songItem/SongItem';
 import styles from '../../new-app/styles';
-import { tracks } from '../../new-app/tracks';
+import { tracks } from './tracks';
 
 export function TracksList(props) {
     const {
