@@ -12,9 +12,11 @@ import TrackPlayer from 'react-native-track-player';
 import { AppPlayer } from '../../player/AppPlayer';
 import AudioPlayer from '../audioPlayer/AudioPlayer';
 import { SongItem } from '../songItem/SongItem';
-import styles from '../../new-app/styles';
+// import styles from '../../new-app/styles';
+
 import { tracks } from './tracks';
 import { verticalScale } from '../../common/scaling';
+import { styles } from './styles';
 
 export function TracksList(props) {
     const {

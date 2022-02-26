@@ -18,7 +18,7 @@ export const circleStyle= (heightWidth) => ({
     alignItems: 'center',
 });
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
 
     appContainer: {
         flex: 1,
@@ -117,4 +117,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default styles;
+// export default styles;
