@@ -1,6 +1,6 @@
 import Slider from "@react-native-community/slider"
 import React, { useEffect, useState } from "react"
-import { Image, Text, View } from "react-native"
+import { Text, View } from "react-native"
 import TrackPlayer, { useProgress } from "react-native-track-player"
 import { colors } from "../../common/colors"
 import { AppPlayer } from "../../player/AppPlayer"
