@@ -21,7 +21,7 @@ const AudioPlayer = (props) => {
     const { track } = props
 
     if(!hasValue(track))
-        return(<View></View>)
+        return(<View />)
 
     return (
         <View style={playerMaxView}>
