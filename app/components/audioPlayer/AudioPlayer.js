@@ -12,55 +12,23 @@ import { TrackDescription } from './TrackDescription';
 import { TrackSlider } from './TrackSlider';
 import { PlayerControlButtons } from './PlayerControlButtons';
 
-const AudioPlayer = ({ track, onNextPrevPress }) => {
+const AudioPlayer = (props) => {
     const {
         playerMaxView,
         topSection,
     } = styles;
 
-    const [isPlaying, setPlaying] = useState(true);
-
-    useEffect(() => {
-        setPlaying(true);
-        TrackPlayer.add(track);
-        TrackPlayer.play();
-    }, [track]);
-
-    const onPlayPausePress = async () => {
-        const state = await TrackPlayer.getState();
-
-        if (state === State.Playing) {
-            TrackPlayer.pause();
-            setPlaying(false);
-        }
-
-        if (state === State.Paused) {
-            TrackPlayer.play();
-            setPlaying(true);
-        }
-    };
-
+    const { track } = props
 
     if(!hasValue(track))
         return(<View></View>)
-    
 
-    // let artImg = null
-    // if(hasValue(track) && hasValue(track.artwork) )
-    //     artImg = track.artwork
-    // else
-    //     artImg = `https://picsum.photos/150/200/?random=${Math.random()}`;
-
-    const artImg = track.artwork || `https://picsum.photos/150/200/?random=${Math.random()}`
-
-
-    const playOrPauseIcon = isPlaying ? 'pause' : 'play';
     return (
         <View style={playerMaxView}>
 
             <View style={topSection}>
 
-                <TrackArt artImage={artImg} />
+                <TrackArt track ={track}/>
 
                 <TrackDescription track={track} />
                 
@@ -68,7 +36,7 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
 
             <TrackSlider track={track} />
 
-            <PlayerControlButtons onNextPrevPress={onNextPrevPress} track={track}/>
+            <PlayerControlButtons {...props} />
 
             </View>
     );

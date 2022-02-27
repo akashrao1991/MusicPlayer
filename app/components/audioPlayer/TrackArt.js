@@ -9,7 +9,9 @@ export const TrackArt = (props) =>{
         trackArt
     } = styles
 
-    const artImage = props.artImage
+
+    const artImage = props.track.artwork || `https://picsum.photos/150/200/?random=${Math.random()}`
+    
     return (
         <View style={trackArtBox}>
             <Image style={trackArt} source={{ uri: artImage }} />
