@@ -16,15 +16,9 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
         playerMaxView,
         topSection,
         buttonsSection,
-        progressBarSection: progrsBarSection,
         buttonsCol,
         playPauseButton,
         playPauseIcon,
-        trackArtBox,
-        trackArt,
-        trackDesc,
-        trackTitle,
-        trackSubtitle,
     } = styles;
 
     const [isPlaying, setPlaying] = useState(true);

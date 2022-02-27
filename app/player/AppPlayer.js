@@ -1,4 +1,4 @@
-import TrackPlayer,{Capability} from 'react-native-track-player';
+import TrackPlayer, { Capability } from 'react-native-track-player';
 
 export class AppPlayer {
 
@@ -16,13 +16,28 @@ export class AppPlayer {
                     Capability.SkipToNext,
                     Capability.SkipToPrevious,
                     Capability.Stop,
+                    Capability.SeekTo,
+                    Capability.Skip,
+                    Capability.SkipToNext,
+                    Capability.SkipToPrevious,
+                    Capability.JumpForward,
+                    Capability.JumpBackward,
                 ],
-            
+
                 // Capabilities that will show up when the notification is in the compact form on Android
                 compactCapabilities: [
-                    Capability.Play, 
-                    Capability.Pause
-                ],            
+                    Capability.Play,
+                    Capability.Pause,
+                    Capability.SkipToNext,
+                    Capability.SkipToPrevious,
+                    Capability.Stop,
+                    Capability.SeekTo,
+                    Capability.Skip,
+                    Capability.SkipToNext,
+                    Capability.SkipToPrevious,
+                    Capability.JumpForward,
+                    Capability.JumpBackward,
+                ],
             })
 
             await TrackPlayer.setupPlayer()

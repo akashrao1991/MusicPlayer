@@ -8,6 +8,7 @@ export const tracks = [
         artist: 'The Epic Hero',
         // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
         album: '',
+        duration:127,
     },
     {
         id: '2',
@@ -16,6 +17,7 @@ export const tracks = [
         artist: 'The Epic Hero',
         // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
         album: '',
+        duration:127,
     },
     {
         id: '3',
@@ -24,6 +26,7 @@ export const tracks = [
         artist: 'The Epic Hero',
         // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
         album: '',
+        duration:127,
     },
     {
         id: '4',
@@ -32,6 +35,7 @@ export const tracks = [
         artist: 'The Epic Hero',
         // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
         album: '',
+        duration:127,
     },
     {
         id: '5',
@@ -40,6 +44,7 @@ export const tracks = [
         artist: 'The Epic Hero',
         // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
         album: '',
+        duration:127,
     },
     {
         id: '6',
@@ -48,6 +53,7 @@ export const tracks = [
         artist: 'The Epic Hero',
         // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
         album: '',
+        duration:127,
     },
     // {
     //     id: '1',
