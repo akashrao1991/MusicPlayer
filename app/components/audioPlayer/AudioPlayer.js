@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
-import TrackPlayer, { useProgress, useTrackPlayerProgress } from 'react-native-track-player';
+import TrackPlayer, { State, useProgress, useTrackPlayerProgress } from 'react-native-track-player';
 import Slider from '@react-native-community/slider';
 import Icon from 'react-native-vector-icons/Fontisto';
 import {hasValue} from '../../common/functions'
@@ -38,12 +38,12 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
     const onPlayPausePress = async () => {
         const state = await TrackPlayer.getState();
 
-        if (state === TrackPlayer.STATE_PLAYING) {
+        if (state === State.Playing) {
             TrackPlayer.pause();
             setPlaying(false);
         }
 
-        if (state === TrackPlayer.STATE_PAUSED) {
+        if (state === State.Paused) {
             TrackPlayer.play();
             setPlaying(true);
         }
