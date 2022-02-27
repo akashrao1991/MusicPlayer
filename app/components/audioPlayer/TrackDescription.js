@@ -14,7 +14,7 @@ export const TrackDescription = (props) => {
     return (
         <View style={trackDesc}>
             <View>
-                <Text style={trackTitle}>{track.title}</Text>
+                <Text style={trackTitle} adjustsFontSizeToFit>{track.title}</Text>
             </View>
             <View>
                 <Text style={trackSubtitle}>

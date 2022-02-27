@@ -44,9 +44,9 @@ export const SongItem = (props) => ({item}) => {
             </View>
             <View style={trackDescBox}>
                 <View style={titleBox}>
-                    <Text style={title}>{item.title}</Text>
+                    <Text style={title} adjustsFontSizeToFit>{item.title}</Text>
                 </View>
-                <View style={subTitleBox}>
+                <View style={subTitleBox} adjustsFontSizeToFit>
                     <Text style={subTitle}>{item.artist || item.album || 'Unknown'}</Text>
                 </View>
             </View>
