@@ -1,3 +1,4 @@
+import { Image } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
 
 export const tracks = [
@@ -6,7 +7,7 @@ export const tracks = [
         url: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.mp3'),
         title: 'Warm Memories Emotional Inspiring Piano',
         artist: 'The Epic Hero',
-        // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
+        artwork: Image.resolveAssetSource(require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg')).uri,
         album: '',
         duration:127,
     },
@@ -15,7 +16,7 @@ export const tracks = [
         url: require('../../resources/audio/Sunny.mp3'),
         title: 'Sunny',
         artist: 'LiQWYD',
-        // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
+        artwork: Image.resolveAssetSource(require('../../resources/audio/Sunny.jpg')).uri,
         album: '',
         duration:138,
     },
@@ -24,7 +25,7 @@ export const tracks = [
         url: require('../../resources/audio/Fluffing-a-Duck.mp3'),
         title: 'Fluffing a Duck',
         artist: 'Kevin MacLeod',
-        // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
+        artwork: Image.resolveAssetSource(require('../../resources/audio/Fluffing-a-Duck.jpg')).uri,
         album: '',
         duration:67,
     },
@@ -33,7 +34,7 @@ export const tracks = [
         url: require('../../resources/audio/Feel-Good.mp3'),
         title: 'Feel Good',
         artist: 'MusicbyAden',
-        // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
+        artwork: Image.resolveAssetSource(require('../../resources/audio/Feel-Good.jpg')).uri,
         album: '',
         duration:158,
     },
@@ -42,7 +43,7 @@ export const tracks = [
         url: require('../../resources/audio/alexander-nakarada-superepic.mp3'),
         title: 'superepic',
         artist: 'Alexander Nakarada',
-        // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
+        artwork: Image.resolveAssetSource(require('../../resources/audio/alexander-nakarada-superepic.jpg')).uri,
         album: '',
         duration:44,
     },
@@ -51,7 +52,7 @@ export const tracks = [
         url: require('../../resources/audio/Good-Morning.mp3'),
         title: 'Good Morning',
         artist: 'MaxKoMusic',
-        // artwork: require('../../resources/audio/Warm-Memories-Emotional-Inspiring-Piano.jpg'),
+        artwork: Image.resolveAssetSource(require('../../resources/audio/Good-Morning.jpg')).uri,
         album: '',
         duration:121,
     },
