@@ -12,11 +12,7 @@ export const TrackArt = (props) =>{
     const artImage = props.artImage
     return (
         <View style={trackArtBox}>
-            {/*
             <Image style={trackArt} source={{ uri: artImage }} />
-            */}
-            <Image style={trackArt} source={{ uri: artImage }} />
-
         </View>
     )
 

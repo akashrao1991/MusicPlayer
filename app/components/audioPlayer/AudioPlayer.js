@@ -10,15 +10,12 @@ import { colors } from '../../common/colors';
 import { TrackArt } from './TrackArt';
 import { TrackDescription } from './TrackDescription';
 import { TrackSlider } from './TrackSlider';
+import { PlayerControlButtons } from './PlayerControlButtons';
 
 const AudioPlayer = ({ track, onNextPrevPress }) => {
     const {
         playerMaxView,
         topSection,
-        buttonsSection,
-        buttonsCol,
-        playPauseButton,
-        playPauseIcon,
     } = styles;
 
     const [isPlaying, setPlaying] = useState(true);
@@ -71,24 +68,9 @@ const AudioPlayer = ({ track, onNextPrevPress }) => {
 
             <TrackSlider track={track} />
 
-            <View style={buttonsSection}>
-                <View style={[buttonsCol, { alignItems: 'flex-end' }]}>
-                    <TouchableOpacity onPress={() => onNextPrevPress('prev')}>
-                        <Icon name="step-backwrad" size={18} color={colors.TINT} />
-                    </TouchableOpacity>
-                </View>
-                <View style={buttonsCol}>
-                    <TouchableOpacity onPress={onPlayPausePress} style={playPauseButton}>
-                        <Icon name={playOrPauseIcon} size={14} color={colors.BLACK} style={playPauseIcon} />
-                    </TouchableOpacity>
-                </View>
-                <View style={[buttonsCol, { alignItems: 'flex-start' }]}>
-                    <TouchableOpacity onPress={() => onNextPrevPress('next')}>
-                        <Icon name="step-forward" size={18} color={colors.BUTTON} />
-                    </TouchableOpacity>
-                </View>
+            <PlayerControlButtons onNextPrevPress={onNextPrevPress} track={track}/>
+
             </View>
-        </View>
     );
 };
 
