@@ -1,28 +1,35 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { Alert, PermissionsAndroid } from 'react-native'
-// import { /* downloadFile, downloadTrack, */ hasStoragePermissions } from '../components/tracksList/DownloadFile'
+import { stat } from 'react-native-fs'
+import RNFetchBlob from 'rn-fetch-blob'
+import { doesFileExist, getFilePath } from '../common/functions'
 import { tracks } from '../components/tracksList/tracks'
 import { download } from './Download'
 import { hasPermissions } from './Permissions'
+import { store } from './store'
 
 const initialState = {
   value: 0,
   hasPermissions:false,
-  tracks: [...tracks]
+  tracks: tracks
 }
 
-export const downloadTrack = createAsyncThunk(
-  '/player/download',
-  async (track) => {
-    // const hasPermission = await hasStoragePermissions()
-    // if (hasPermission) {
-    //   downloadFile(track)
+export const init = createAsyncThunk(
+  'player/init',
+  async()=>{
 
-    // }
-    return false
+    const localtracks = [...store.getState().player.tracks]
+    console.log('before init')
+    localtracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
+
+    for(const track in localtracks){
+      const exists = await doesFileExist(track)
+      track.isDownloaded = exists
+      console.log(track)
+      console.log(track.id,'#########',exists)
+    }
+    return localtracks
   }
 )
-
 
 const playerSlice = createSlice({
   name: 'player',
@@ -31,26 +38,32 @@ const playerSlice = createSlice({
     downloadProgress:(state,action)=>{
       const {received, total} = action.payload
       console.log(`recieved ${received} \t total ${total} \t progress ${received/total}`)
-    }
-
+    },
+    
   },
   extraReducers: (builder) => {
     builder
-    .addCase(downloadTrack.fulfilled, (state, action) => {
-      const value = action.payload
-      const index = state.tracks.findIndex(track => track.id === value.id)
-      state.tracks[index].dowloaded = true
-      state.tracks[index].path = value.path
-    })
     .addCase(hasPermissions.fulfilled,(state,action)=>{
       state.hasPermissions = action.payload
     })
     .addCase(download.fulfilled,(state,action)=>{
       // state.hasPermissions = action.payload
-      console.log('$$$$$$$$$$$$$$$$',JSON.parse(action.payload))
+      const track = action.payload
+      console.log('$$$$$$$$$$$$$$$$',track)
+      const index= state.tracks.findIndex(value=>value.id===track.id)
+      state.tracks[index].isDownloaded = true
     })
+    .addCase(init.fulfilled,(state,action)=>{
+      // state.hasPermissions = action.payload
+      state.tracks= action.payload
+      console.log('after init')
+      state.tracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
+
+    })
+    
   }
 })
 
-export const { downloadProgress } = playerSlice
+export const { downloadProgress,initialize } = playerSlice.actions
 export default playerSlice
+

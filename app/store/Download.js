@@ -1,6 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import RNFetchBlob from "rn-fetch-blob";
-import { downloadProgress } from "./playerReducer";
+import { getFilePath } from "../common/functions";
+// import { downloadProgress, getFilePath } from "./playerReducer";
 import { store } from "./store";
 
 const getFileExtention = fileUrl => {
@@ -14,6 +15,11 @@ export const download = createAsyncThunk(
     'player/download',
     async (track) => {
 
+        const fileExists =  await RNFetchBlob.fs.exists(getFilePath(track))
+        if(fileExists)
+            return track
+
+
         // File URL which we want to download
         let FILE_URL = track.url
         // let FILE_URL = 'https://download.novapdf.com/download/samples/pdf-example-encryption.pdf'   
@@ -24,12 +30,11 @@ export const download = createAsyncThunk(
 
         // config: To get response by passing the downloading related options
         // fs: Root directory path to download
-        const { config, fs } = RNFetchBlob
-        let RootDir = fs.dirs.DownloadDir
+        const { config } = RNFetchBlob
         let options = {
             // fileCache: true,
             addAndroidDownloads: {
-                path: `${RootDir}/${track.filename}`,
+                path: getFilePath(track),
                 description: 'downloading file...',
                 notification: true,
                 // useDownloadManager works with Android only
@@ -51,7 +56,7 @@ export const download = createAsyncThunk(
  */
             console.log('#############',JSON.stringify(result))
 
-        return JSON.stringify(result)
+        return track
     }
 
 )

@@ -3,6 +3,8 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
 // import Icon from 'react-native-vector-icons/Fontisto';
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import { useSelector } from 'react-redux';
+import RNFetchBlob from 'rn-fetch-blob';
 import { colors } from '../../common/colors';
 import { hasValue } from '../../common/functions';
 import { download } from '../../store/Download';
@@ -26,6 +28,10 @@ export const SongItem = (props) => ({item}) => {
     const {selectedTrack,setSelectedTrack} = props
     const artImg = item.artwork || `https://picsum.photos/150/200/?random=${Math.random()}`;
 
+
+    const isDownloaded    = item.isDownloaded === true
+    const isNotDownloaded = item.isDownloaded === false
+
     let highlightStyle = {};
     if (hasValue(selectedTrack) && selectedTrack.id === item.id)
         highlightStyle = { backgroundColor: colors.HIGHLIGHT_BACKGROUND }
@@ -41,7 +47,12 @@ export const SongItem = (props) => ({item}) => {
     const onDownloadPress = async(event)=>{
         // console.log(item);
         store.dispatch(download(item))
+    }
 
+    const onFileDownloadDonePress = async(event)=>{
+        // console.log(item);
+        
+        store.dispatch(download(item))
     }
 
 
@@ -63,13 +74,16 @@ export const SongItem = (props) => ({item}) => {
                     <Text style={subTitle}>{item.artist || item.album || 'Unknown'}</Text>
                 </View>
             </View>
+            { isNotDownloaded && 
             <TouchableOpacity onPress={(event)=>onDownloadPress(event)} style={{ justifyContent: 'center',alignItems: 'center',}} >
             <Icon name={'cloud-download'} size={30} style={{opacity:0.7}}  color={colors.BLACK}  />
         </TouchableOpacity>
-            <TouchableOpacity onPress={(event)=>onDownloadPress(event)} style={{ justifyContent: 'center',alignItems: 'center',}}>
+            }
+            { isDownloaded && 
+            <TouchableOpacity onPress={(event)=>onFileDownloadDonePress(event)} style={{ justifyContent: 'center',alignItems: 'center',}}>
             <Icon name={'file-download-done'} style={{opacity:0.7}} size={30} color={colors.BLACK}  />
         </TouchableOpacity>
-
+            }
 
         </TouchableOpacity>
         <View style={{alignSelf:'center',width:'90%',opacity:0.4,height:1,backgroundColor:colors.BLACK}}  />

@@ -70,6 +70,7 @@ export const tracks = [
         album: '',
         duration: 146,
         filename:'1-bensound-ukulele.mp3',
+        isDownloaded:false,
     },
     
     {
@@ -81,6 +82,7 @@ export const tracks = [
         album: 'Ben Sound',
         duration: 147,
         filename:'2-bensound-creativeminds.mp3',
+        isDownloaded:false,
     },
 
 
@@ -93,6 +95,7 @@ export const tracks = [
         album: '',
         duration: 194,
         filename:'3-bensound-cute.mp3',
+        isDownloaded:false,
     },
 
 
@@ -105,6 +108,7 @@ export const tracks = [
         album: 'Artificial Music',
         duration: 140,
         filename:'4-bensound-sunny.mp3',
+        isDownloaded:false,
     },
 
 
@@ -117,6 +121,7 @@ export const tracks = [
         album: 'INOSSI',
         duration: 294,
         filename:'5-bensound-tomorrow.mp3',
+        isDownloaded:false,
     },
 
     {
@@ -128,6 +133,7 @@ export const tracks = [
         album: 'Energy',
         duration: 179,
         filename:'6-bensound-energy.mp3',
+        isDownloaded:false,
     },
 /* 
 

@@ -35,7 +35,7 @@ export function TracksList(props) {
         // downloadTrack(track)
     }, []);
 
-    const tracks = useSelector(state=>{console.log(state);return state.player.tracks})
+    const tracks = useSelector(state=>state.player.tracks)
 
     const [selectedTrack, setSelectedTrack] = useState(null)
 

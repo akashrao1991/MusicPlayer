@@ -35,6 +35,9 @@ export function PlayerControlButtons(props){
 
     useEffect(() => {
         setPlaying(true);
+        if(!track.isDownloaded)
+            track.url = 
+
         TrackPlayer.add(track);
         TrackPlayer.play();
     }, [track]);
