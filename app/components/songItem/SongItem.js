@@ -3,8 +3,6 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
 // import Icon from 'react-native-vector-icons/Fontisto';
 import Icon from 'react-native-vector-icons/MaterialIcons'
-import { useSelector } from 'react-redux';
-import RNFetchBlob from 'rn-fetch-blob';
 import { colors } from '../../common/colors';
 import { hasValue } from '../../common/functions';
 import { download } from '../../store/Download';

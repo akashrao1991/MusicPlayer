@@ -15,7 +15,11 @@ export const download = createAsyncThunk(
     'player/download',
     async (track) => {
 
-        const fileExists =  await RNFetchBlob.fs.exists(getFilePath(track))
+        const path = `${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}}`
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!',path)
+        const fileExists =  await RNFetchBlob.fs.exists(path)
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!',fileExists)
+
         if(fileExists)
             return track
 
@@ -34,7 +38,7 @@ export const download = createAsyncThunk(
         let options = {
             // fileCache: true,
             addAndroidDownloads: {
-                path: getFilePath(track),
+                path: path,
                 description: 'downloading file...',
                 notification: true,
                 // useDownloadManager works with Android only

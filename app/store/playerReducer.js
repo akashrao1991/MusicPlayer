@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { stat } from 'react-native-fs'
 import RNFetchBlob from 'rn-fetch-blob'
 import { doesFileExist, getFilePath } from '../common/functions'
 import { tracks } from '../components/tracksList/tracks'
@@ -17,17 +16,19 @@ export const init = createAsyncThunk(
   'player/init',
   async()=>{
 
-    const localtracks = [...store.getState().player.tracks]
-    console.log('before init')
-    localtracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
-
+    const state = store.getState().player
+    const localtracks = [...state.tracks]
+    // console.log('before init')
+    // localtracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
+/* 
     for(const track in localtracks){
-      const exists = await doesFileExist(track)
+      const path= `${RNFetchBlob.fs.dirs.CacheDir}/${track.filename}`
+      const exists = await RNFetchBlob.fs.exists(path)
       track.isDownloaded = exists
       console.log(track)
       console.log(track.id,'#########',exists)
     }
-    return localtracks
+ */    return localtracks
   }
 )
 
@@ -56,8 +57,8 @@ const playerSlice = createSlice({
     .addCase(init.fulfilled,(state,action)=>{
       // state.hasPermissions = action.payload
       state.tracks= action.payload
-      console.log('after init')
-      state.tracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
+      // console.log('after init')
+      // state.tracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
 
     })
     

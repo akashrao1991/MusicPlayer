@@ -23,6 +23,8 @@ import com.dooboolab.audiorecorderplayer.RNAudioRecorderPlayerPackage;
 import com.ocetnik.timer.BackgroundTimerPackage;
 // react-native-fs
 import com.rnfs.RNFSPackage;
+// react-native-sound
+import com.zmxv.RNSound.RNSoundPackage;
 // react-native-track-player
 import com.guichaguri.trackplayer.TrackPlayer;
 // react-native-vector-icons
@@ -80,6 +82,7 @@ public class PackageList {
       new RNAudioRecorderPlayerPackage(),
       new BackgroundTimerPackage(),
       new RNFSPackage(),
+      new RNSoundPackage(),
       new TrackPlayer(),
       new VectorIconsPackage(),
       new RNFetchBlobPackage()

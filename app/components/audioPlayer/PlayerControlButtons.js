@@ -2,9 +2,33 @@ import React, { useEffect, useState } from "react";
 import { TouchableOpacity, View } from "react-native";
 import TrackPlayer, { State } from "react-native-track-player";
 import Icon from 'react-native-vector-icons/Fontisto';
+import RNFetchBlob from "rn-fetch-blob";
+// const RNFetchBlob = require( "rn-fetch-blob");
 import { colors } from "../../common/colors";
+import { getFilePath } from "../../common/functions";
 import { styles } from "./styles";
 
+async function addTrack(track){
+
+    const local = {
+        id: track.id,
+        url:`${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}}`,
+        title: track.title,
+        artist: track.artist,
+        artwork: track.artwork,
+    }
+    // delete local.url
+    
+    const s = await RNFetchBlob.fs.exists(local.url)
+    console.log('local============',local)
+    console.log('local============',s)
+    local.url = `file://${local.url}`
+    console.log('local============',local)
+
+    TrackPlayer.add(local);
+    TrackPlayer.play();
+
+}
 
 export function PlayerControlButtons(props){
 
@@ -35,12 +59,20 @@ export function PlayerControlButtons(props){
 
     useEffect(() => {
         setPlaying(true);
-        if(!track.isDownloaded)
-            track.url = 
+        // if(track.isDownloaded)
+/*         const local = {
+            ...track,
+            url:`file://${getFilePath(track)}`,
+            // uri:"file:/"+getFilePath(track)
+        }
+        // delete local.url
+        console.log('local============',local)
 
-        TrackPlayer.add(track);
+        TrackPlayer.add([local]);
         TrackPlayer.play();
-    }, [track]);
+ */    
+        addTrack(track)
+}, [track]);
 
     useEffect(()=>{
         setPlaying(true)

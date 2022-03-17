@@ -43,7 +43,7 @@
 21-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-70
 22
 23    <application
-23-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:10:5-29:19
+23-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:10:5-31:19
 24        android:name="com.musicplayer.MainApplication"
 24-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:11:7-38
 25        android:allowBackup="false"
@@ -55,86 +55,88 @@
 28-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:13:7-41
 29        android:label="@string/app_name"
 29-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:12:7-39
-30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:14:7-52
-31        android:testOnly="true"
-32        android:theme="@style/AppTheme"
-32-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:16:7-38
-33        android:usesCleartextTraffic="true" >
-33-->/home/akash/custom/temp/MusicPlayer/android/app/src/debug/AndroidManifest.xml:8:9-44
-34        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-34-->/home/akash/custom/temp/MusicPlayer/android/app/src/debug/AndroidManifest.xml:11:9-86
-34-->/home/akash/custom/temp/MusicPlayer/android/app/src/debug/AndroidManifest.xml:11:19-83
-35        <activity
-35-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:17:7-28:18
-36            android:name="com.musicplayer.MainActivity"
-36-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:18:9-37
-37            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-37-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:20:9-86
-38            android:label="@string/app_name"
-38-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:19:9-41
-39            android:launchMode="singleTask"
-39-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:21:9-40
-40            android:windowSoftInputMode="adjustResize" >
-40-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:22:9-51
-41            <intent-filter>
-41-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:23:9-27:25
-42                <action android:name="android.intent.action.MAIN" />
-42-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:24:13-65
-42-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:24:21-62
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:25:13-73
-44-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:25:23-70
-45
-46                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
-46-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:26:13-77
-46-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:26:21-75
-47            </intent-filter>
-48        </activity> <!-- The main service, handles playback, playlists and media buttons -->
-49        <service
-49-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-22:19
-50            android:name="com.guichaguri.trackplayer.service.MusicService"
-50-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-75
-51            android:enabled="true"
-51-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-35
-52            android:exported="true" >
-52-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-36
-53            <intent-filter>
-53-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
-54                <action android:name="android.intent.action.MEDIA_BUTTON" />
-54-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
-54-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
-55            </intent-filter>
-56        </service> <!-- A receiver that will receive media buttons. Required on pre-lollipop devices -->
-57        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
-57-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-29:20
-57-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:19-76
-58            <intent-filter>
-58-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
-59                <action android:name="android.intent.action.MEDIA_BUTTON" />
-59-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
-59-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
-60            </intent-filter>
-61        </receiver>
-62
-63        <provider
-63-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-42:20
-64            android:name="com.RNFetchBlob.Utils.FileProvider"
-64-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-62
-65            android:authorities="com.musicplayer.provider"
-65-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-60
-66            android:exported="false"
-66-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
-67            android:grantUriPermissions="true" >
-67-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-47
-68            <meta-data
-68-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-41:58
-69                android:name="android.support.FILE_PROVIDER_PATHS"
-69-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-67
-70                android:resource="@xml/provider_paths" />
-70-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:17-55
-71        </provider>
-72    </application>
-73
-74</manifest>
+30        android:requestLegacyExternalStorage="true"
+30-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:17:7-50
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:14:7-52
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme"
+33-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:16:7-38
+34        android:usesCleartextTraffic="true" >
+34-->/home/akash/custom/temp/MusicPlayer/android/app/src/debug/AndroidManifest.xml:8:9-44
+35        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+35-->/home/akash/custom/temp/MusicPlayer/android/app/src/debug/AndroidManifest.xml:11:9-86
+35-->/home/akash/custom/temp/MusicPlayer/android/app/src/debug/AndroidManifest.xml:11:19-83
+36        <activity
+36-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:19:7-30:18
+37            android:name="com.musicplayer.MainActivity"
+37-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:20:9-37
+38            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+38-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:22:9-86
+39            android:label="@string/app_name"
+39-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:21:9-41
+40            android:launchMode="singleTask"
+40-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:23:9-40
+41            android:windowSoftInputMode="adjustResize" >
+41-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:24:9-51
+42            <intent-filter>
+42-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:25:9-29:25
+43                <action android:name="android.intent.action.MAIN" />
+43-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:26:13-65
+43-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:26:21-62
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:27:13-73
+45-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:27:23-70
+46
+47                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+47-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:28:13-77
+47-->/home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:28:21-75
+48            </intent-filter>
+49        </activity> <!-- The main service, handles playback, playlists and media buttons -->
+50        <service
+50-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:9-22:19
+51            android:name="com.guichaguri.trackplayer.service.MusicService"
+51-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-75
+52            android:enabled="true"
+52-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-35
+53            android:exported="true" >
+53-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-36
+54            <intent-filter>
+54-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
+55                <action android:name="android.intent.action.MEDIA_BUTTON" />
+55-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
+55-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
+56            </intent-filter>
+57        </service> <!-- A receiver that will receive media buttons. Required on pre-lollipop devices -->
+58        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
+58-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-29:20
+58-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:19-76
+59            <intent-filter>
+59-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-21:29
+60                <action android:name="android.intent.action.MEDIA_BUTTON" />
+60-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:17-77
+60-->[:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:25-74
+61            </intent-filter>
+62        </receiver>
+63
+64        <provider
+64-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-42:20
+65            android:name="com.RNFetchBlob.Utils.FileProvider"
+65-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-62
+66            android:authorities="com.musicplayer.provider"
+66-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-60
+67            android:exported="false"
+67-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-37
+68            android:grantUriPermissions="true" >
+68-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-47
+69            <meta-data
+69-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-41:58
+70                android:name="android.support.FILE_PROVIDER_PATHS"
+70-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:17-67
+71                android:resource="@xml/provider_paths" />
+71-->[:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:17-55
+72        </provider>
+73    </application>
+74
+75</manifest>

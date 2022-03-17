@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
-INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
-INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
-INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
+MERGED from [:react-native-async-storage_async-storage] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-community_slider] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/slider/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-12:12
@@ -14,7 +15,7 @@ MERGED from [:react-native-vector-icons] /home/akash/custom/temp/MusicPlayer/nod
 MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:2:1-45:12
 MERGED from [com.facebook.react:react-native:0.67.3] /home/akash/.gradle/caches/transforms-3/098f8218b6e3adfe3866f67ecc09a139/transformed/jetified-react-native-0.67.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/akash/.gradle/caches/transforms-3/ca8d1565e1c3bb490bc0e958e764d010/transformed/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/5e3c8c741d9bb0e2cf2585e5d685d844/transformed/jetified-glide-4.7.1/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/0d92f0111193fca6b2751860f34d1540/transformed/jetified-glide-4.7.1/AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.fragment:fragment:1.0.0] /home/akash/.gradle/caches/transforms-3/c6bbd3d97eada6e9fdf2d52babae4c17/transformed/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/akash/.gradle/caches/transforms-3/9d5be3d26eb7b929880f76458659eea6/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/akash/.gradle/caches/transforms-3/e19889a9ca7a54a8c314551cb0fb3d69/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -54,7 +55,7 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01]
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/akash/.gradle/caches/transforms-3/0d8e54407dca82c0ea36b2db004cb7ea/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/akash/.gradle/caches/transforms-3/5f1d2e5036d296f541582e5f3954dc31/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/akash/.gradle/caches/transforms-3/34e84b32ac686df490ffd62be7904e0f/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/7cb836967eabb9e6767b439dae6391d8/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:2:1-11:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/fff0190f408c580a7887cfdbe0905e65/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/akash/.gradle/caches/transforms-3/218c12d661b67b9c5436ff9e663409dc/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/akash/.gradle/caches/transforms-3/6100c482f0e32766bb7ff38eab7783e4/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/akash/.gradle/caches/transforms-3/cc35031b164f6a77bd8b42ee082dac3a/transformed/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
@@ -62,20 +63,20 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/akash/.gradle/ca
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/akash/.gradle/caches/transforms-3/f485a3b71ad4b94937fde1b34e17d479/transformed/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/akash/.gradle/caches/transforms-3/0ab5adfd76b7650bfaec7eebb54f4f96/transformed/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.facebook.fresco:fbcore:2.5.0] /home/akash/.gradle/caches/transforms-3/2f9049a9d12ab4e450750fcd94785400/transformed/jetified-fbcore-2.5.0/AndroidManifest.xml:2:1-9:12
-INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
-INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
-INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
+INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
+INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
 	package
 		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:2:3-28
 		INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
 		INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-25:12
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:1-30:12
 		INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:1:11-69
@@ -85,8 +86,34 @@ MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn
 MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-67
 	android:name
 		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:5:5-80
+	android:name
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:6:5-81
+MERGED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-81
+MERGED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-81
+MERGED from [:react-native-fs] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-fs/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+MERGED from [:react-native-fs] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-fs/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
+MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:31:5-81
+MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:31:5-81
+	android:name
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.DOWNLOAD_WITHOUT_NOTIFICATION
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:7:5-88
+	android:name
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:7:22-85
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:8:5-79
+MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:5-79
+MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /home/akash/.gradle/caches/transforms-3/a5a337d730253e39de572a183c2022cf/transformed/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /home/akash/.gradle/caches/transforms-3/a5a337d730253e39de572a183c2022cf/transformed/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:8:22-76
 application
-ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:6:5-24:19
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:10:5-29:19
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-20
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-20
 MERGED from [:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:5-30:19
@@ -95,56 +122,62 @@ MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn
 MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:5-43:19
 MERGED from [com.facebook.react:react-native:0.67.3] /home/akash/.gradle/caches/transforms-3/098f8218b6e3adfe3866f67ecc09a139/transformed/jetified-react-native-0.67.3/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-native:0.67.3] /home/akash/.gradle/caches/transforms-3/098f8218b6e3adfe3866f67ecc09a139/transformed/jetified-react-native-0.67.3/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/5e3c8c741d9bb0e2cf2585e5d685d844/transformed/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/5e3c8c741d9bb0e2cf2585e5d685d844/transformed/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/0d92f0111193fca6b2751860f34d1540/transformed/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/0d92f0111193fca6b2751860f34d1540/transformed/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.1] /home/akash/.gradle/caches/transforms-3/95eb807ff7c266d8b4a3401149f72420/transformed/jetified-soloader-0.10.1/AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.10.1] /home/akash/.gradle/caches/transforms-3/95eb807ff7c266d8b4a3401149f72420/transformed/jetified-soloader-0.10.1/AndroidManifest.xml:11:5-20
 MERGED from [androidx.core:core:1.3.0-rc01] /home/akash/.gradle/caches/transforms-3/3c02a643354a85fbbd714a16fd73cf71/transformed/core-1.3.0-rc01/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.3.0-rc01] /home/akash/.gradle/caches/transforms-3/3c02a643354a85fbbd714a16fd73cf71/transformed/core-1.3.0-rc01/AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/akash/.gradle/caches/transforms-3/5f1d2e5036d296f541582e5f3954dc31/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/akash/.gradle/caches/transforms-3/5f1d2e5036d296f541582e5f3954dc31/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/7cb836967eabb9e6767b439dae6391d8/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/7cb836967eabb9e6767b439dae6391d8/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/fff0190f408c580a7887cfdbe0905e65/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/fff0190f408c580a7887cfdbe0905e65/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.0-rc01] /home/akash/.gradle/caches/transforms-3/3c02a643354a85fbbd714a16fd73cf71/transformed/core-1.3.0-rc01/AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:8:7-39
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:12:7-39
 	android:roundIcon
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:10:7-52
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:14:7-52
 	android:icon
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:9:7-41
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:13:7-41
 	android:allowBackup
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:15:7-34
 	android:theme
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:12:7-38
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:16:7-38
 	android:name
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:7:7-38
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:11:7-38
 activity#com.musicplayer.MainActivity
-ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:13:7-23:18
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:17:7-28:18
 	android:label
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:19:9-41
 	android:launchMode
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:17:9-40
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:21:9-40
 	android:windowSoftInputMode
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:18:9-51
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:22:9-51
 	android:configChanges
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:16:9-86
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:20:9-86
 	android:name
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:14:9-37
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:19:9-22:25
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:18:9-37
+intent-filter#action:name:android.intent.action.DOWNLOAD_COMPLETE+action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:23:9-27:25
 action#android.intent.action.MAIN
-ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:20:13-65
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:24:13-65
 	android:name
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:20:21-62
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:24:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:21:13-73
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:25:13-73
 	android:name
-		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:21:23-70
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:25:23-70
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:26:13-77
+	android:name
+		ADDED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml:26:21-75
 uses-sdk
 INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/akash/custom/temp/MusicPlayer/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-async-storage_async-storage] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-async-storage_async-storage] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_datetimepicker] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/datetimepicker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-community_slider] /home/akash/custom/temp/MusicPlayer/node_modules/@react-native-community/slider/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:5:5-7:41
@@ -165,8 +198,8 @@ MERGED from [com.facebook.react:react-native:0.67.3] /home/akash/.gradle/caches/
 MERGED from [com.facebook.react:react-native:0.67.3] /home/akash/.gradle/caches/transforms-3/098f8218b6e3adfe3866f67ecc09a139/transformed/jetified-react-native-0.67.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/akash/.gradle/caches/transforms-3/ca8d1565e1c3bb490bc0e958e764d010/transformed/appcompat-1.0.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] /home/akash/.gradle/caches/transforms-3/ca8d1565e1c3bb490bc0e958e764d010/transformed/appcompat-1.0.2/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/5e3c8c741d9bb0e2cf2585e5d685d844/transformed/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/5e3c8c741d9bb0e2cf2585e5d685d844/transformed/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/0d92f0111193fca6b2751860f34d1540/transformed/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] /home/akash/.gradle/caches/transforms-3/0d92f0111193fca6b2751860f34d1540/transformed/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.fragment:fragment:1.0.0] /home/akash/.gradle/caches/transforms-3/c6bbd3d97eada6e9fdf2d52babae4c17/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] /home/akash/.gradle/caches/transforms-3/c6bbd3d97eada6e9fdf2d52babae4c17/transformed/fragment-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /home/akash/.gradle/caches/transforms-3/9d5be3d26eb7b929880f76458659eea6/transformed/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
@@ -245,8 +278,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/akash
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/akash/.gradle/caches/transforms-3/5f1d2e5036d296f541582e5f3954dc31/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/akash/.gradle/caches/transforms-3/34e84b32ac686df490ffd62be7904e0f/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/akash/.gradle/caches/transforms-3/34e84b32ac686df490ffd62be7904e0f/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/7cb836967eabb9e6767b439dae6391d8/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/7cb836967eabb9e6767b439dae6391d8/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/fff0190f408c580a7887cfdbe0905e65/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /home/akash/.gradle/caches/transforms-3/fff0190f408c580a7887cfdbe0905e65/transformed/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/akash/.gradle/caches/transforms-3/218c12d661b67b9c5436ff9e663409dc/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/akash/.gradle/caches/transforms-3/218c12d661b67b9c5436ff9e663409dc/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/akash/.gradle/caches/transforms-3/6100c482f0e32766bb7ff38eab7783e4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
@@ -275,14 +308,6 @@ uses-permission#android.permission.RECORD_AUDIO
 ADDED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-71
 	android:name
 		ADDED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-68
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-81
-MERGED from [:react-native-fs] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-fs/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
-MERGED from [:react-native-fs] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-fs/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-81
-MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:31:5-81
-MERGED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:31:5-81
-	android:name
-		ADDED from [:react-native-audio-recorder-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-audio-recorder-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [:react-native-background-timer] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-background-timer/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-68
 MERGED from [:react-native-track-player] /home/akash/custom/temp/MusicPlayer/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-68
@@ -317,12 +342,6 @@ uses-permission#com.android.vending.CHECK_LICENSE
 ADDED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-73
 	android:name
 		ADDED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-70
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /home/akash/.gradle/caches/transforms-3/a5a337d730253e39de572a183c2022cf/transformed/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.11.4] /home/akash/.gradle/caches/transforms-3/a5a337d730253e39de572a183c2022cf/transformed/jetified-exoplayer-core-2.11.4/AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [:rn-fetch-blob] /home/akash/custom/temp/MusicPlayer/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:5-76
 	android:name

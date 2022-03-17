@@ -4,40 +4,32 @@
         "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable-mdpi_app_resources_audio_warmmemoriesemotionalinspiringpiano.jpg.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/drawable-mdpi/app_resources_audio_warmmemoriesemotionalinspiringpiano.jpg"
+        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/raw_app_resources_audio_feelgood.mp3.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/raw/app_resources_audio_feelgood.mp3"
+        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/raw_app_resources_audio_warmmemoriesemotionalinspiringpiano.mp3.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/raw/app_resources_audio_warmmemoriesemotionalinspiringpiano.mp3"
+        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable-mdpi_app_resources_audio_alexandernakaradasuperepic.jpg.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/drawable-mdpi/app_resources_audio_alexandernakaradasuperepic.jpg"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable-mdpi_app_resources_audio_sunny.jpg.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/drawable-mdpi/app_resources_audio_sunny.jpg"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/raw_app_resources_audio_fluffingaduck.mp3.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/raw/app_resources_audio_fluffingaduck.mp3"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/raw_app_resources_audio_alexandernakaradasuperepic.mp3.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/raw/app_resources_audio_alexandernakaradasuperepic.mp3"
+        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable_rn_edit_text_material.xml.flat",
         "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/drawable/rn_edit_text_material.xml"
     },
     {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/raw_app_resources_audio_goodmorning.mp3.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/raw/app_resources_audio_goodmorning.mp3"
+        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher_round.png.flat",
@@ -50,46 +42,6 @@
     {
         "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/raw_app_resources_audio_sunny.mp3.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/raw/app_resources_audio_sunny.mp3"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable-mdpi_app_resources_audio_feelgood.jpg.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/drawable-mdpi/app_resources_audio_feelgood.jpg"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable-mdpi_app_resources_audio_goodmorning.jpg.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/drawable-mdpi/app_resources_audio_goodmorning.jpg"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable-mdpi_app_resources_audio_fluffingaduck.jpg.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/build/generated/res/react/release/drawable-mdpi/app_resources_audio_fluffingaduck.jpg"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/akash/custom/temp/MusicPlayer/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/akash/custom/temp/MusicPlayer/android/app/build/intermediates/res/merged/release/drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
