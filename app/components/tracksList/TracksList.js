@@ -14,10 +14,10 @@ import AudioPlayer from '../audioPlayer/AudioPlayer';
 import { SongItem } from '../songItem/SongItem';
 // import styles from '../../new-app/styles';
 
-import { tracks } from './tracks';
 import { verticalScale } from '../../common/scaling';
 import { styles } from './styles';
 import { downloadTrack } from './DownloadFile';
+import { useSelector } from 'react-redux';
 
 export function TracksList(props) {
     const {
@@ -31,9 +31,11 @@ export function TracksList(props) {
 
     useEffect(() => {
         AppPlayer.initializePlayer()
-        const track = tracks[2]
-        downloadTrack(track)
+        // const track = tracks[2]
+        // downloadTrack(track)
     }, []);
+
+    const tracks = useSelector(state=>{console.log(state);return state.player.tracks})
 
     const [selectedTrack, setSelectedTrack] = useState(null)
 

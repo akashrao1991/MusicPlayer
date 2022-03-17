@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
+// import Icon from 'react-native-vector-icons/Fontisto';
+import Icon from 'react-native-vector-icons/MaterialIcons'
 import { colors } from '../../common/colors';
 import { hasValue } from '../../common/functions';
 import {styles} from './styles';
@@ -34,8 +36,15 @@ export const SongItem = (props) => ({item}) => {
     
 
 
+    const onDownloadPress = async(event)=>{
+
+    }
+
 
     return (
+        <View >
+
+
         <TouchableOpacity
             onPress={() => onTrackItemPress(item)}
             style={[itemStyle, highlightStyle]}>
@@ -50,7 +59,19 @@ export const SongItem = (props) => ({item}) => {
                     <Text style={subTitle}>{item.artist || item.album || 'Unknown'}</Text>
                 </View>
             </View>
+            <TouchableOpacity onPress={(event)=>onDownloadPress(event)} style={{ justifyContent: 'center',alignItems: 'center',}} >
+            <Icon name={'cloud-download'} size={30} style={{opacity:0.7}}  color={colors.BLACK}  />
         </TouchableOpacity>
+            <TouchableOpacity onPress={(event)=>onDownloadPress(event)} style={{ justifyContent: 'center',alignItems: 'center',}}>
+            <Icon name={'file-download-done'} style={{opacity:0.7}} size={30} color={colors.BLACK}  />
+        </TouchableOpacity>
+
+
+        </TouchableOpacity>
+        <View style={{alignSelf:'center',width:'90%',opacity:0.4,height:1,backgroundColor:colors.BLACK}}  />
+
+        </View>
+
     )
 
 }
