@@ -4,12 +4,11 @@ import { useDispatch } from 'react-redux';
 import { colors } from './common/colors';
 import {styles} from './common/styles';
 import {TracksList} from './components/tracksList/TracksList';
-import { hasPermissions } from './store/playerReducer';
+import { hasPermissions } from './store/Permissions';
 import { store } from './store/store';
 
 const MainScreen = () => {
     const { appContainer,  header, headerTitle } = styles;
-    const dispatch = useDispatch()
 
     useEffect(()=>{
         store.dispatch(hasPermissions())

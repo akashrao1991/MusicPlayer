@@ -1,11 +1,13 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import React from 'react';
 import { Alert, PermissionsAndroid } from 'react-native'
 // import { /* downloadFile, downloadTrack, */ hasStoragePermissions } from '../components/tracksList/DownloadFile'
 import { tracks } from '../components/tracksList/tracks'
+import { download } from './Download'
+import { hasPermissions } from './Permissions'
 
 const initialState = {
   value: 0,
+  hasPermissions:false,
   tracks: [...tracks]
 }
 
@@ -21,38 +23,15 @@ export const downloadTrack = createAsyncThunk(
   }
 )
 
-export const hasPermissions = createAsyncThunk(
-  '/player/permissions',
-  async () =>{
-    console.log('before premission request')
-    const granted = await PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.WRITE_EXTERNAL_STORAGE,
-      {
-        title: 'Storage Permission Required',
-        message:
-          'Application needs access to your storage to download File',
-      }
-    )
-    console.log('after premission request')
-
-    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-      // Start downloading
-      // downloadFile(track);
-      console.log('Storage Permission Granted.')
-      return true
-    } else {
-      // If permission denied then show alert
-      Alert.alert('Error','Storage Permission Not Granted')
-    }
-    return false
-  }
-)
 
 const playerSlice = createSlice({
   name: 'player',
   initialState,
   reducers: {
-    
+    downloadProgress:(state,action)=>{
+      const {received, total} = action.payload
+      console.log(`recieved ${received} \t total ${total} \t progress ${received/total}`)
+    }
 
   },
   extraReducers: (builder) => {
@@ -64,10 +43,14 @@ const playerSlice = createSlice({
       state.tracks[index].path = value.path
     })
     .addCase(hasPermissions.fulfilled,(state,action)=>{
-
+      state.hasPermissions = action.payload
+    })
+    .addCase(download.fulfilled,(state,action)=>{
+      // state.hasPermissions = action.payload
+      console.log('$$$$$$$$$$$$$$$$',JSON.parse(action.payload))
     })
   }
 })
 
-
+export const { downloadProgress } = playerSlice
 export default playerSlice

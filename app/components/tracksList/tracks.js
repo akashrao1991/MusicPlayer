@@ -69,6 +69,7 @@ export const tracks = [
         artwork: 'https://www.bensound.com/bensound-img/ukulele.jpg',
         album: '',
         duration: 146,
+        filename:'1-bensound-ukulele.mp3',
     },
     
     {
@@ -79,6 +80,7 @@ export const tracks = [
         artwork: 'https://www.bensound.com/bensound-img/creativeminds.jpg',
         album: 'Ben Sound',
         duration: 147,
+        filename:'2-bensound-creativeminds.mp3',
     },
 
 
@@ -90,6 +92,7 @@ export const tracks = [
         artwork: 'https://www.bensound.com/bensound-img/cute.jpg',
         album: '',
         duration: 194,
+        filename:'3-bensound-cute.mp3',
     },
 
 
@@ -101,6 +104,7 @@ export const tracks = [
         artwork: 'https://www.bensound.com/bensound-img/sunny.jpg',
         album: 'Artificial Music',
         duration: 140,
+        filename:'4-bensound-sunny.mp3',
     },
 
 
@@ -112,7 +116,9 @@ export const tracks = [
         artwork: 'https://www.bensound.com/bensound-img/tomorrow.jpg',
         album: 'INOSSI',
         duration: 294,
+        filename:'5-bensound-tomorrow.mp3',
     },
+
     {
         id: '6',
         url: 'https://www.bensound.com/bensound-music/bensound-energy.mp3',
@@ -121,6 +127,7 @@ export const tracks = [
         artwork: 'https://www.bensound.com/bensound-img/energy.jpg',
         album: 'Energy',
         duration: 179,
+        filename:'6-bensound-energy.mp3',
     },
 /* 
 

@@ -5,6 +5,8 @@ import TrackPlayer from 'react-native-track-player';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import { colors } from '../../common/colors';
 import { hasValue } from '../../common/functions';
+import { download } from '../../store/Download';
+import { store } from '../../store/store';
 import {styles} from './styles';
 
 export const SongItem = (props) => ({item}) => {
@@ -37,6 +39,8 @@ export const SongItem = (props) => ({item}) => {
 
 
     const onDownloadPress = async(event)=>{
+        // console.log(item);
+        store.dispatch(download(item))
 
     }
 
