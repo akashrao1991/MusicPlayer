@@ -17,6 +17,7 @@ import { SongItem } from '../songItem/SongItem';
 import { tracks } from './tracks';
 import { verticalScale } from '../../common/scaling';
 import { styles } from './styles';
+import { downloadTrack } from './DownloadFile';
 
 export function TracksList(props) {
     const {
@@ -29,7 +30,9 @@ export function TracksList(props) {
     // state vars
 
     useEffect(() => {
-        AppPlayer.initializePlayer();
+        AppPlayer.initializePlayer()
+        const track = tracks[2]
+        downloadTrack(track)
     }, []);
 
     const [selectedTrack, setSelectedTrack] = useState(null)
