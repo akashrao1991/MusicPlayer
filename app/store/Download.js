@@ -11,6 +11,25 @@ const getFileExtention = fileUrl => {
 }
 
 
+export const deleteDownload = createAsyncThunk(
+    'player/delete-download',
+    async (track) => {
+
+        const path = `${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}}`
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!',path)
+        const fileExists =  await RNFetchBlob.fs.exists(path)
+        console.log('!!!!!!!!!!!!!!!!!!!!!!!!!',fileExists)
+
+        if(!fileExists)
+            return track
+
+        RNFetchBlob.fs.unlink(path)
+
+        return track
+    }
+)
+
+
 export const download = createAsyncThunk(
     'player/download',
     async (track) => {

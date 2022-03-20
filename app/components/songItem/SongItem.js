@@ -3,14 +3,17 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import TrackPlayer from 'react-native-track-player';
 // import Icon from 'react-native-vector-icons/Fontisto';
 import Icon from 'react-native-vector-icons/MaterialIcons'
+import { useSelector } from 'react-redux';
 import { colors } from '../../common/colors';
 import { hasValue } from '../../common/functions';
-import { download } from '../../store/Download';
+import { deleteDownload, download } from '../../store/Download';
 import { setCurrentTrack } from '../../store/playerReducer';
 import { store } from '../../store/store';
 import {styles} from './styles';
 
-export const SongItem = (props) => ({item}) => {
+export const SongItem = (props) =>{ 
+
+    const {item} = props
 
     const {
         itemStyle,
@@ -24,38 +27,33 @@ export const SongItem = (props) => ({item}) => {
     } = styles
 
 
-    const {selectedTrack,setSelectedTrack} = props
-    const artImg = item.artwork || `https://picsum.photos/150/200/?random=${Math.random()}`;
+    // const {selectedTrack,setSelectedTrack} = props
+    // const selectedTrack = useSelector(state=>state.player.currentTrack)
 
+    const artImg = item.artwork || `https://picsum.photos/150/200/?random=${Math.random()}`;
 
     const isDownloaded    = item.isDownloaded === true
     const isNotDownloaded = item.isDownloaded === false
+    const selectedTrack = useSelector(state=>state.player.currentTrack)
 
     let highlightStyle = {};
     if (hasValue(selectedTrack) && selectedTrack.id === item.id)
         highlightStyle = { backgroundColor: colors.HIGHLIGHT_BACKGROUND }
     
     const onTrackItemPress = async (track) => {
-/* 
-        await TrackPlayer.stop()
-        await TrackPlayer.reset()
-
- */        
+        console.log('***************************',track)
         store.dispatch(setCurrentTrack(track))
-        // setSelectedTrack(track)
     }
     
 
 
     const onDownloadPress = async(event)=>{
-        // console.log(item);
+        console.log('-------------------',item)
         store.dispatch(download(item))
     }
 
-    const onFileDownloadDonePress = async(event)=>{
-        // console.log(item);
-        
-        store.dispatch(download(item))
+    const onDeleteDownload = async(event)=>{
+        store.dispatch(deleteDownload(item))
     }
 
 
@@ -83,7 +81,7 @@ export const SongItem = (props) => ({item}) => {
         </TouchableOpacity>
             }
             { isDownloaded && 
-            <TouchableOpacity onPress={(event)=>onFileDownloadDonePress(event)} style={{ justifyContent: 'center',alignItems: 'center',}}>
+            <TouchableOpacity onPress={(event)=>onDeleteDownload(event)} style={{ justifyContent: 'center',alignItems: 'center',}}>
             <Icon name={'file-download-done'} style={{opacity:0.7}} size={30} color={colors.BLACK}  />
         </TouchableOpacity>
             }
@@ -94,7 +92,6 @@ export const SongItem = (props) => ({item}) => {
         </View>
 
     )
-
 }
 
 

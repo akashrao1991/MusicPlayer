@@ -8,13 +8,12 @@ import { TrackSlider } from './TrackSlider';
 import { PlayerControlButtons } from './PlayerControlButtons';
 import { useSelector } from 'react-redux';
 
-const AudioPlayer = (props) => {
+const AudioPlayer = () => {
     const {
         playerMaxView,
         topSection,
     } = styles;
 
-    // const { track } = props
     const track = useSelector(state=>state.player.currentTrack)
 
     if(!hasValue(track))
@@ -25,15 +24,15 @@ const AudioPlayer = (props) => {
 
             <View style={topSection}>
 
-                <TrackArt track ={track}/>
+                <TrackArt />
 
-                <TrackDescription track={track} />
+                <TrackDescription />
                 
             </View>
 
-            <TrackSlider track={track} />
+            <TrackSlider />
 
-            <PlayerControlButtons {...props} />
+            <PlayerControlButtons />
 
         </View>
     );

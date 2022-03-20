@@ -1,9 +1,9 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import TrackPlayer from 'react-native-track-player'
+import TrackPlayer, { State } from 'react-native-track-player'
 import RNFetchBlob from 'rn-fetch-blob'
 import { doesFileExist, getFilePath } from '../common/functions'
 import { tracks } from '../components/tracksList/tracks'
-import { download } from './Download'
+import { deleteDownload, download } from './Download'
 import { hasPermissions } from './Permissions'
 import { store } from './store'
 
@@ -11,6 +11,7 @@ const initialState = {
   value: 0,
   hasPermissions: false,
   currentTrack: null,
+  isPlaying:true,
   tracks: tracks
 }
 
@@ -38,8 +39,8 @@ export const setCurrentTrack = createAsyncThunk(
   'player/set-current-track',
   async (track) => {
 
-    await TrackPlayer.stop();
-    await TrackPlayer.reset();
+    await TrackPlayer.stop()
+    await TrackPlayer.reset()
 
 
     const local = {
@@ -62,10 +63,30 @@ export const setCurrentTrack = createAsyncThunk(
 
     console.log('local============', local)
 
-    TrackPlayer.add(local);
-    TrackPlayer.play();
+    TrackPlayer.add(local)
+    TrackPlayer.play()
+
+
 
     return track
+  }
+)
+
+export const togglePlaying = createAsyncThunk(
+  'player/toggle-playing',
+  async () => {
+    const state = await TrackPlayer.getState();
+
+    if (state === State.Playing) {
+        TrackPlayer.pause();
+        return false
+    }
+
+    if (state === State.Paused) {
+        TrackPlayer.play();
+        return true 
+    }
+
   }
 )
 
@@ -77,7 +98,6 @@ const playerSlice = createSlice({
       const { received, total } = action.payload
       console.log(`recieved ${received} \t total ${total} \t progress ${received / total}`)
     },
-
   },
   extraReducers: (builder) => {
     builder
@@ -99,10 +119,16 @@ const playerSlice = createSlice({
 
       })
       .addCase(setCurrentTrack.fulfilled,(state,action)=>{
-
         state.currentTrack = action.payload
+        state.isPlaying = true
         console.log('&&&&&&&&&=========> current track in reducer',state.currentTrack)
-
+      })
+      .addCase(deleteDownload.fulfilled,(state,action)=>{
+        const track = action.payload
+        console.log('^^^^^^^^^',track);
+      })
+      .addCase(togglePlaying.fulfilled,(state,action)=>{
+        state.isPlaying = action.payload
       })
 
   }

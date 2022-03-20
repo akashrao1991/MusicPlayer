@@ -18,6 +18,11 @@ import { verticalScale } from '../../common/scaling';
 import { styles } from './styles';
 import { downloadTrack } from './DownloadFile';
 import { useSelector } from 'react-redux';
+import { hasValue } from '../../common/functions';
+
+const renderSongItem = ({item})=>(
+    <SongItem item ={item} />
+)
 
 export function TracksList(props) {
     const {
@@ -31,16 +36,13 @@ export function TracksList(props) {
 
     useEffect(() => {
         AppPlayer.initializePlayer()
-        // const track = tracks[2]
-        // downloadTrack(track)
     }, []);
 
     const tracks = useSelector(state=>state.player.tracks)
-
-    const [selectedTrack, setSelectedTrack] = useState(null)
+    const selectedTrack = useSelector(state=>state.player.currentTrack)
 
     let listBoxStyle = {};
-    if (selectedTrack)
+    if (hasValue(selectedTrack))
         listBoxStyle = { paddingBottom: verticalScale(280) }
 
     const playNextPrev = async (prevOrNext) => {
@@ -62,10 +64,10 @@ export function TracksList(props) {
 
         <SafeAreaView style={container}>
             <View style={[listBox, listBoxStyle]}>
-                <FlatList data={tracks} renderItem={SongItem({ selectedTrack, setSelectedTrack })} keyExtractor={item => item.id} />
+                <FlatList data={tracks} renderItem={renderSongItem} keyExtractor={item => item.id} />
             </View>
             <View style={playerBox}>
-                <AudioPlayer track={selectedTrack} onNextPrevPress={playNextPrev} />
+                <AudioPlayer onNextPrevPress={playNextPrev} />
             </View>
         </SafeAreaView>
         </View>
