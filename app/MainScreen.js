@@ -14,7 +14,7 @@ const MainScreen = () => {
     useEffect(()=>{
 
         store.dispatch(hasPermissions())
-        store.dispatch(init())
+        // store.dispatch(init())
 
     },[])
 

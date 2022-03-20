@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
+import { Alert } from 'react-native'
 import TrackPlayer, { State } from 'react-native-track-player'
 import RNFetchBlob from 'rn-fetch-blob'
 import { doesFileExist, getFilePath } from '../common/functions'
@@ -21,17 +22,18 @@ export const init = createAsyncThunk(
 
     const state = store.getState().player
     const localtracks = [...state.tracks]
-    // console.log('before init')
-    // localtracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
-/* 
+    console.log('before init')
+    localtracks.forEach(track=>console.log(track.id,' ',track.isDownloaded))
+
     for(const track in localtracks){
-      const path= `${RNFetchBlob.fs.dirs.CacheDir}/${track.filename}`
+      const path= `${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}`
       const exists = await RNFetchBlob.fs.exists(path)
       track.isDownloaded = exists
       console.log(track)
       console.log(track.id,'#########',exists)
     }
- */    return localtracks
+
+    return localtracks
   }
 )
 
@@ -45,13 +47,14 @@ export const setCurrentTrack = createAsyncThunk(
 
     const local = {
       id: track.id,
-      path: `${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}}`,
+      path: `${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}`,
       title: track.title,
       artist: track.artist,
       artwork: track.artwork,
     }
     // delete local.url
 
+    // const localFileExists = await doesFileExist(local.path)
     const localFileExists = await RNFetchBlob.fs.exists(local.path)
     console.log('local============', local)
     console.log('local============', localFileExists)
@@ -110,6 +113,10 @@ const playerSlice = createSlice({
         console.log('$$$$$$$$$$$$$$$$', track)
         const index = state.tracks.findIndex(value => value.id === track.id)
         state.tracks[index].isDownloaded = true
+        Alert.alert(
+          "Download Status",
+          "The file has downloaded successfully",
+        )
       })
       .addCase(init.fulfilled, (state, action) => {
         // state.hasPermissions = action.payload
