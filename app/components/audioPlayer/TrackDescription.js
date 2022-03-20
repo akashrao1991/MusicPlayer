@@ -1,5 +1,6 @@
 import React from "react"
 import { Image, Text, View } from "react-native"
+import { useSelector } from "react-redux"
 import { styles } from "./styles"
 
 export const TrackDescription = (props) => {
@@ -10,7 +11,9 @@ export const TrackDescription = (props) => {
         trackTitle
     } = styles
 
-    const track = props.track
+    // const track = props.track
+    const track = useSelector(state=>state.player.currentTrack)
+    
     return (
         <View style={trackDesc}>
             <View>
