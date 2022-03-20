@@ -2,6 +2,7 @@ import Slider from "@react-native-community/slider"
 import React, { useEffect, useState } from "react"
 import { Text, View } from "react-native"
 import TrackPlayer, { useProgress } from "react-native-track-player"
+import { useSelector } from "react-redux"
 import { colors } from "../../common/colors"
 import { AppPlayer } from "../../player/AppPlayer"
 import { styles } from "./styles"
@@ -37,7 +38,8 @@ export const TrackSlider = (props) => {
         playerSeekTo(seekValue)
     },[seekValue])
 
-    const track = props.track
+    const track = useSelector(state=>state.player.currentTrack)
+    
     return (
         <View style={progressBarSection}>
             <Text>{AppPlayer.secondsToHHMMSS(Math.floor(progress.position || 0))}</Text>

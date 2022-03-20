@@ -12,17 +12,21 @@ async function addTrack(track){
 
     const local = {
         id: track.id,
-        url:`${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}}`,
+        path:`${RNFetchBlob.fs.dirs.MusicDir}/${track.filename}}`,
         title: track.title,
         artist: track.artist,
         artwork: track.artwork,
     }
     // delete local.url
     
-    const s = await RNFetchBlob.fs.exists(local.url)
+    const localFileExists = await RNFetchBlob.fs.exists(local.path)
     console.log('local============',local)
-    console.log('local============',s)
-    local.url = `file://${local.url}`
+    console.log('local============',localFileExists)
+    if(localFileExists)
+        local.url = `file://${local.path}`
+    else
+        local.url = track.url
+
     console.log('local============',local)
 
     TrackPlayer.add(local);

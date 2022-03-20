@@ -6,6 +6,7 @@ import { TrackArt } from './TrackArt';
 import { TrackDescription } from './TrackDescription';
 import { TrackSlider } from './TrackSlider';
 import { PlayerControlButtons } from './PlayerControlButtons';
+import { useSelector } from 'react-redux';
 
 const AudioPlayer = (props) => {
     const {
@@ -13,7 +14,8 @@ const AudioPlayer = (props) => {
         topSection,
     } = styles;
 
-    const { track } = props
+    // const { track } = props
+    const track = useSelector(state=>state.player.currentTrack)
 
     if(!hasValue(track))
         return(<View />)

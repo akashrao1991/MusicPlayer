@@ -6,6 +6,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons'
 import { colors } from '../../common/colors';
 import { hasValue } from '../../common/functions';
 import { download } from '../../store/Download';
+import { setCurrentTrack } from '../../store/playerReducer';
 import { store } from '../../store/store';
 import {styles} from './styles';
 
@@ -35,9 +36,13 @@ export const SongItem = (props) => ({item}) => {
         highlightStyle = { backgroundColor: colors.HIGHLIGHT_BACKGROUND }
     
     const onTrackItemPress = async (track) => {
-        await TrackPlayer.stop();
-        await TrackPlayer.reset();
-        setSelectedTrack(track);
+/* 
+        await TrackPlayer.stop()
+        await TrackPlayer.reset()
+
+ */        
+        store.dispatch(setCurrentTrack(track))
+        // setSelectedTrack(track)
     }
     
 
