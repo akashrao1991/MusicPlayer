@@ -35,7 +35,7 @@ const AudioPlayer = (props) => {
 
             <PlayerControlButtons {...props} />
 
-            </View>
+        </View>
     );
 };
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { TouchableOpacity, View } from "react-native";
 import TrackPlayer, { State } from "react-native-track-player";
 import Icon from 'react-native-vector-icons/Fontisto';
+import { useSelector } from "react-redux";
 import RNFetchBlob from "rn-fetch-blob";
 // const RNFetchBlob = require( "rn-fetch-blob");
 import { colors } from "../../common/colors";
@@ -45,7 +46,8 @@ export function PlayerControlButtons(props){
         playPauseIcon,
     } = styles;
 
-    const {onNextPrevPress,track} =props
+    // const {onNextPrevPress,track} =props
+    const track = useSelector(state=>state.player.currentTrack)
 
     const onPlayPausePress = async () => {
         const state = await TrackPlayer.getState();
